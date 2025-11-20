@@ -107,10 +107,6 @@ module user_project (
     assign s_wb_err[1] = 1'b0;
 
     WB_PIC pic (
-`ifdef USE_POWER_PINS
-        .VPWR(vccd1),
-        .VGND(vssd1),
-`endif
         .clk(wb_clk_i),
         .rst_n(~wb_rst_i),
         .irq_lines(irq_lines),
