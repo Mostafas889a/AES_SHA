@@ -36,9 +36,6 @@
 -v $(USER_PROJECT_VERILOG)/../ip/EF_SHA256/hdl/rtl/bus_wrappers/EF_SHA256_WB.v
 
 # IP Utilities
--v $(USER_PROJECT_VERILOG)/../ip/EF_IP_UTIL/hdl/rtl/cdc_sync_bus.v
--v $(USER_PROJECT_VERILOG)/../ip/EF_IP_UTIL/hdl/rtl/DFFRFile.v
--v $(USER_PROJECT_VERILOG)/../ip/EF_IP_UTIL/hdl/rtl/IRQ_RD_FF.v
--v $(USER_PROJECT_VERILOG)/../ip/EF_IP_UTIL/hdl/rtl/IRQ_WR_FF.v
+-v $(USER_PROJECT_VERILOG)/../ip/EF_IP_UTIL/hdl/ef_util_lib.v
 
  
