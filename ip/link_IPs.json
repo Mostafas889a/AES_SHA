@@ -1,0 +1,12 @@
+{
+  "ips": [
+    {
+      "name": "EF_AES",
+      "version": "v1.1.0"
+    },
+    {
+      "name": "EF_SHA256",
+      "version": "v1.1.0"
+    }
+  ]
+}
