@@ -35,14 +35,18 @@ Base address: `0x3000_0000`
 | PIC       | 0x3002_0000  | 64KB | Programmable Interrupt Controller |
 
 ## Current Status
-🟡 **In Progress** - Project Setup Phase
+🟡 **In Progress** - RTL Development Phase
 
 ### Implementation Progress
 - [x] Caravel template copied
 - [x] Initial documentation structure created
-- [ ] IP integration in progress
-- [ ] RTL development pending
-- [ ] Verification pending
+- [x] IP integration (EF_AES v1.1.0, EF_SHA256 v1.1.0) linked
+- [x] RTL development completed
+  - [x] user_project module with bus splitter and peripherals
+  - [x] user_project_wrapper integration
+  - [x] RTL includes file updated
+  - [x] Basic lint checks passed
+- [ ] Verification in progress
 - [ ] Physical design pending
 
 ## Project Structure
