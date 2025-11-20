@@ -14,7 +14,31 @@
 # SPDX-License-Identifier: Apache-2.0
 
 # Caravel user project includes
--v $(USER_PROJECT_VERILOG)/rtl/user_project_wrapper.v	     
--v $(USER_PROJECT_VERILOG)/rtl/user_proj_example.v
+-v $(USER_PROJECT_VERILOG)/rtl/user_project_wrapper.v
+-v $(USER_PROJECT_VERILOG)/rtl/user_project.v
+-v $(USER_PROJECT_VERILOG)/rtl/wishbone_bus_splitter.v
+-v $(USER_PROJECT_VERILOG)/rtl/WB_PIC.v
+
+# EF_AES IP
+-v $(USER_PROJECT_VERILOG)/../ip/EF_AES/hdl/rtl/aes.v
+-v $(USER_PROJECT_VERILOG)/../ip/EF_AES/hdl/rtl/aes_core.v
+-v $(USER_PROJECT_VERILOG)/../ip/EF_AES/hdl/rtl/aes_decipher_block.v
+-v $(USER_PROJECT_VERILOG)/../ip/EF_AES/hdl/rtl/aes_encipher_block.v
+-v $(USER_PROJECT_VERILOG)/../ip/EF_AES/hdl/rtl/aes_inv_sbox.v
+-v $(USER_PROJECT_VERILOG)/../ip/EF_AES/hdl/rtl/aes_key_mem.v
+-v $(USER_PROJECT_VERILOG)/../ip/EF_AES/hdl/rtl/aes_sbox.v
+-v $(USER_PROJECT_VERILOG)/../ip/EF_AES/hdl/rtl/bus_wrappers/EF_AES_WB.v
+
+# EF_SHA256 IP
+-v $(USER_PROJECT_VERILOG)/../ip/EF_SHA256/hdl/rtl/sha256_core.v
+-v $(USER_PROJECT_VERILOG)/../ip/EF_SHA256/hdl/rtl/sha256_k_constants.v
+-v $(USER_PROJECT_VERILOG)/../ip/EF_SHA256/hdl/rtl/sha256_w_mem.v
+-v $(USER_PROJECT_VERILOG)/../ip/EF_SHA256/hdl/rtl/bus_wrappers/EF_SHA256_WB.v
+
+# IP Utilities
+-v $(USER_PROJECT_VERILOG)/../ip/EF_IP_UTIL/hdl/rtl/cdc_sync_bus.v
+-v $(USER_PROJECT_VERILOG)/../ip/EF_IP_UTIL/hdl/rtl/DFFRFile.v
+-v $(USER_PROJECT_VERILOG)/../ip/EF_IP_UTIL/hdl/rtl/IRQ_RD_FF.v
+-v $(USER_PROJECT_VERILOG)/../ip/EF_IP_UTIL/hdl/rtl/IRQ_WR_FF.v
 
  

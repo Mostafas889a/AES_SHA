@@ -91,17 +91,17 @@ module user_project (
         .VPWR(vccd1),
         .VGND(vssd1),
 `endif
-        .wb_clk_i(wb_clk_i),
-        .wb_rst_i(wb_rst_i),
-        .wbs_adr_i(s_wb_adr[63:32]),
-        .wbs_dat_i(s_wb_dat_mosi[63:32]),
-        .wbs_dat_o(s_wb_dat_miso[63:32]),
-        .wbs_sel_i(s_wb_sel[7:4]),
-        .wbs_cyc_i(s_wb_cyc[1]),
-        .wbs_stb_i(s_wb_stb[1]),
-        .wbs_ack_o(s_wb_ack[1]),
-        .wbs_we_i(s_wb_we[1]),
-        .IRQ(sha256_irq)
+        .clk_i(wb_clk_i),
+        .rst_i(wb_rst_i),
+        .adr_i(s_wb_adr[63:32]),
+        .dat_i(s_wb_dat_mosi[63:32]),
+        .dat_o(s_wb_dat_miso[63:32]),
+        .sel_i(s_wb_sel[7:4]),
+        .cyc_i(s_wb_cyc[1]),
+        .stb_i(s_wb_stb[1]),
+        .ack_o(s_wb_ack[1]),
+        .we_i(s_wb_we[1]),
+        .irq_o(sha256_irq)
     );
 
     assign s_wb_err[1] = 1'b0;
